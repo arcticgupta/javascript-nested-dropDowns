@@ -1,0 +1,22 @@
+D You need to perform cloning of a select list "row" in html using javascript
+D You will be provided with a json object with all the data.
+D Initial page should have only an "Add" button and a "Save" button.
+D When the add button is clicked it should create a select dropdown with all the values present in the json.
+D The dropdown options' innerHTML should be "label" value of the json.
+D The dropdown options' "value" should be the "value" of the json.
+D Example: <option id="jsonValue">jsonLabel</option>
+
+D The select dropdown should be followed by an add and a delete button. (each cloned row should have select box + add btn + delete btn)
+D Add button should add a dropdown below itself.
+D Delete button should delete its entire row.
+When the save button is clicked, the label and value of each <select> element of ALL rows should be stored in a json and saved in the "saveData" div
+
+Additional Checks:
+Must Have:
+D 1. First dropdown should have as many options as present in the json (number of keys in the json).
+D 2. Once selected, an option cant be selected again and should be made unavailable (disabled) to the other dropdowns until deleted.
+D 3. Once all options are selected, clicking on add button should throw a msg saying "All options already selected".
+
+Good to Have:
+1. Add a tooltip to tell user why an option is disabled when the user hovers over it.
+2. Save Data in a dummy url (use any post request js protocol) so that the same can be seen in the "Network" tab.
